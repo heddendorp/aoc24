@@ -22,5 +22,5 @@ export const day1 = Effect.gen(function*() {
   const result = yield* Stream.run(difference, Sink.sum)
   yield* Effect.log(`Result of Puzzle 1: ${result}`)
   const result2 = yield* Stream.run(similarity, Sink.sum)
-    yield* Effect.log(`Result of Puzzle 2: ${result2}`)
+  yield* Effect.log(`Result of Puzzle 2: ${result2}`)
 })
